@@ -6,9 +6,9 @@ reposunda.
 
 ## Özet
 - Başlangıç: 2026-10-19
-- Toplam oda/makine: 12
-- Toplam saat: ~15
-- Güncel streak: 7 gün
+- Toplam oda/makine: 15
+- Toplam saat: ~17
+- Güncel streak: 9 gün
 
 ## Günlük Log
 
@@ -26,6 +26,9 @@ reposunda.
 | 2026-10-24 | THM      | Protocols and Servers 2        | Easy      | 1    | Hayır    | Auth saldırıları (Hydra), sniffing/MITM, SSH hardening, Wireshark protokol filtreleri (imap vb.) |
 | 2026-10-25 | THM      | Nmap Live Host Discovery       | Easy      | 1    | Hayır    | Host discovery: -sn, ARP (-PR), ICMP (-PE/-PP/-PM), TCP SYN/ACK ping, -n/-R/--dns-servers |
 | 2026-10-26 | THM      | All in One                     | Easy*     | 1.5  | **Evet** | Çok vektörlü CTF. Zincir: mail-masta LFI (php://filter → wp-config DB creds) → WP admin → functions.php reverse shell → www-data → gizli dosyadan (find -user) elyana şifresi → sudo socat (GTFOBins) → root. Bir sürü çıkmaz sokak + pivot. |
+| 2026-10-27 | THM      | Nmap Basic Port Scans          | Easy      | 0.75 | Hayır    | TCP Connect (-sT), SYN (-sS), UDP (-sU); -p-/-p1-1023/-F/-r, -T0-5, --min/max-rate, --min-parallelism |
+| 2026-10-27 | THM      | Nmap Advanced Port Scans       | Easy      | 0.75 | Hayır    | Null/FIN/Xmas (-sN/-sF/-sX), Maimon (-sM), ACK/Window (-sA/-sW), --scanflags; spoofing (-S, --spoof-mac), decoy (-D), idle/zombie (-sI), fragment (-f/-ff) |
+| 2026-10-27 | THM      | Nmap Post Port Scans           | Easy      | 0.75 | Hayır    | Servis/sürüm (-sV), OS (-O), --traceroute, NSE (--script/-sC), -A; çıktı kaydetme (-oN/-oG/-oX/-oA) |
 
 \* "Easy" etiketli ama pratikte baya zorladı — çoklu yol, çok sayıda kapalı vektör.
 
